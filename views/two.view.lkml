@@ -32,36 +32,6 @@ view: two {
     sql: ${TABLE}.policy ;;
   }
 
-  dimension: lowest_allowable {
-    type: number
-    sql: CAST(SPLIT(${policy},"-")[OFFSET(0)] AS INT64) ;;
-  }
-
-  dimension: highest_allowable {
-    type: number
-    sql: CAST(SPLIT(SPLIT(${policy},"-")[OFFSET(1)]," ")[OFFSET(0)] AS INT64) ;;
-  }
-
-  dimension: requiredchar {
-    type: string
-    sql: SPLIT(${policy}," ")[OFFSET(1)] ;;
-  }
-
-  dimension: num_occurences {
-    type: number
-    sql:LENGTH(${pass}) - LENGTH(REGEXP_REPLACE(${pass}, ${requiredchar}, '')) ;;
-  }
-
-  dimension: allowed {
-    type: yesno
-    sql: ${num_occurences} BETWEEN ${lowest_allowable} AND ${highest_allowable} ;;
-  }
-
-  measure: count_allowed {
-    type: sum
-    sql: CASE WHEN ${allowed} THEN 1 ELSE 0 END ;;
-  }
-
   dimension: pass {
     type: string
     sql: ${TABLE}.pass ;;

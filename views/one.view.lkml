@@ -33,23 +33,4 @@ view: one {
     sql: ${TABLE}.expense ;;
   }
 
-  measure: count {
-    type: count
-  }
-
-  measure: sum_expenses {
-    type: sum
-    sql: ${expense} ;;
-  }
-
-  dimension: sums_to_2020 {
-    type: yesno
-    sql: ${one.expense} + ${one_self.expense} = 2020 ;;
-  }
-
-  dimension: part_two_sum {
-    type: yesno
-    sql: ${one.expense} + ${one_self.expense} + ${one_self_again.expense} = 2020 ;;
-  }
-
 }
