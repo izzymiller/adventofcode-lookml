@@ -18,3 +18,8 @@ explore: one {
     type: cross
   }
 }
+
+#Day two
+explore: two {
+  description: "https://adventofcode.com/2020/day/2"
+}
