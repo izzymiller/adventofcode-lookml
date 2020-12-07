@@ -12,3 +12,18 @@ explore: one {
 explore: two {
   description: "https://adventofcode.com/2020/day/2"
 }
+
+#Day three
+explore: three {}
+
+#Day four
+explore: four {}
+
+#Day five
+explore: five {}
+
+#Day six
+explore: six {}
+
+#Day seven
+explore: seven {}
