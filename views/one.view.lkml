@@ -48,8 +48,16 @@ view: one {
   }
 
   dimension: part_two_sum {
+    #For part two
     type: yesno
     sql: ${one.expense} + ${one_self.expense} + ${one_self_again.expense} = 2020 ;;
   }
 
 }
+
+# --- Part Two ---
+# The Elves in accounting are thankful for your help; one of them even offers you a starfish coin they had left over from a past vacation. They offer you a second one if you can find three numbers in your expense report that meet the same criteria.
+
+# Using the above example again, the three entries that sum to 2020 are 979, 366, and 675. Multiplying them together produces the answer, 241861950.
+
+# In your expense report, what is the product of the three entries that sum to 2020?
