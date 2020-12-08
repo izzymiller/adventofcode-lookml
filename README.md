@@ -27,4 +27,4 @@ I recommend saving a Look of each completed solution to your personal folder, in
 
 **Post your solutions in the [Advent of LookML group](https://community.looker.com/groups/advent-of-lookml-1015) in the Looker Community. And/or tweet your work #adventofcode #adventoflookml.**
 
-*Stuck? post on community.looker.com and/or tweet @isidoremiller*
+*Stuck? post on [community.looker.com](https://community.looker.com/groups/advent-of-lookml-1015) and/or tweet @isidoremiller*
