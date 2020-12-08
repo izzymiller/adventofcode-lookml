@@ -41,7 +41,12 @@
 
 view: six {
   sql_table_name: lookerdata.adventofcode20.6 ;;
-  #I did the same thing here as with exercise 4, where I've uploaded a table that includes "-newline-" on rows where there was a blank line in the raw data. This should allow you to identify/extract the groups.
+  # I'm stumped on how to make this one work in csv-sql. It's hard because of the line break grouping.
+  # FWIW, I copied and pasted the input to a new text document, then replaced the new lines with -newline- using sed
+  # Then I uploaded that to BQ— You could copy and paste that into a sheet, add the rownum index, and then into csv-sql
+  #Bit more complex though. good challenge!
+
+  #In the uploaded table— I did the same thing here as with exercise 4, where I've uploaded a table that includes "-newline-" on rows where there was a blank line in the raw data. This should allow you to identify/extract the groups.
   # There is a rownum column that preserves the original order of the raw data, which is critical to maintain as the grouping is important. order by it, ascending.
 
   dimension: rownum {

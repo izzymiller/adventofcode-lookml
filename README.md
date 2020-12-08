@@ -3,9 +3,10 @@
 
 I'm following along with the [Advent Of Code 2020](https://adventofcode.com/2020) in Looker!
 
-I'll try and keep the production version of this project updated with each day's activity and data by 11am Pacific, but I might not always make it fast enough— Feel free to go your own way or just wait impatiently. Before pinging me, **make sure you've pulled from production**!
+I'll try and keep the production version of this project updated with each day's activity and data instructions/examples by 11am Pacific, but I might not always make it fast enough— Feel free to start in on new days yourself. Before pinging me, **make sure you've pulled from production**!
 
-The data for this lives in a public BigQuery sandbox (Standard SQL), and each day's data (once I've uploaded it) will be available at `lookerdata.adventofcode20.<daynumber>`. Sometimes I'll make tweaks to the data to make your life easier (see day 4, for example)
+There is *example* data for each day in a public BigQuery sandbox (Standard SQL). Each day's data (once I've uploaded it) will be available at `lookerdata.adventofcode20.<daynumber>`.
+**HOWEVER: Each user's data is different. When you click "Get Input" on the advent of code activity, you will get a different dataset than I will. Hence, each day's view file has a set of *instructions* on how to load the days input into Looker, usually using a nifty tool called [csv-sql](https://csv-sql.web.app/). Make sure to read those instructions, they're helpful.**
 
 ## How to participate
 
