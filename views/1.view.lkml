@@ -628,7 +628,7 @@ view: one {
       1902 AS expense
     UNION ALL
     SELECT
-      1741 AS expense
+      174 AS expense
     ;;
     sql_trigger_value: SELECT 1 ;;
   }
